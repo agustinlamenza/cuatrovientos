@@ -11,6 +11,12 @@
     {
         static void Main(string[] args)
         {
+            Datos();
+            //ProcesarDatosPersonas();
+        }
+
+        public void Datos()
+        {
             var personas = new List<Persona>();
 
             var reader = new StreamReader($"{Environment.CurrentDirectory}/personas.csv");
@@ -33,6 +39,11 @@
             {
                 Console.WriteLine($"El nombre es: {item.Nombre}, {item.Apellido}");
             }
+        }
+
+        public void ProcesarDatosPersonas()
+        {
+            // logica 
         }
     }
 }
