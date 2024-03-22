@@ -7,7 +7,7 @@ def main():
                     """)
     if program == "1":
         filtrar_edades()
-    if program == "2":
+    elif program == "2":
         filtrar_nombres()
     elif program == "3":
         mostrar_tipos()
@@ -39,7 +39,7 @@ def filtrar_edades():
             try:
                 person["age"] = int(data[4])
             except ValueError:
-                person["age"] = 0
+                continue
 
             people.append(person)
 
